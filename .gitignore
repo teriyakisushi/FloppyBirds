@@ -1,6 +1,12 @@
 Temp/*
 .vs/*
 Build/*
-Libray/*
+Library/*
 Logs/*
 obj/*
+UserSettings/*
+*.sln.DotSettings.user
+*.suo
+*.userprefs
+*.user
+*.csproj.user
