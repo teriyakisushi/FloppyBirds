@@ -29,7 +29,7 @@ public class PipeMiddleScript : MonoBehaviour
         if (collision.gameObject.layer == 3)
         {
             Debug.Log("Bird Entered");
-            Logic.AddScore(1);
+            Logic.AddScore(10000);
 
         }
     }

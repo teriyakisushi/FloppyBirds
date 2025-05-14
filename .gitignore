@@ -10,3 +10,5 @@ UserSettings/*
 *.userprefs
 *.user
 *.csproj.user
+/Assets/TextMesh Pro
+/Assets/TextMesh Pro.meta

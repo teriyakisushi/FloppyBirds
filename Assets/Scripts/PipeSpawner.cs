@@ -3,6 +3,7 @@ using UnityEngine;
 public class PipeSpawner : MonoBehaviour
 {
     public GameObject pipe;
+    public LogicScript logic;
     public float spawnRate = 2.0f;
     public float genPipeHeightOffset = 5.0f;
     private float timer = 0.0f;
@@ -21,8 +22,8 @@ public class PipeSpawner : MonoBehaviour
         }
         else
         {
-            PipeSpawn();
-            timer = 0;
+                PipeSpawn();
+                timer = 0;
         }
     }
     void PipeSpawn()

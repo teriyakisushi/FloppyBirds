@@ -498,7 +498,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 11.5
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -722,7 +722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 4628043288993706386, guid: 894e43ed9f5dcec45828cddb9b53dbfd, type: 3}
-  spawnRate: 2
+  logic: {fileID: 0}
+  spawnRate: 0.6
   genPipeHeightOffset: 5
 --- !u!4 &978234236
 Transform:
@@ -1028,8 +1029,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FloppyRigid2D: {fileID: 1539861087}
   FloppyFlapStrength: 3
+  FloppyRotationRate: 2
   isBirdAlive: 1
   logic: {fileID: 0}
+  rotationDuration: 0.25
 --- !u!58 &1539861089
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1096,8 +1099,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerScore: 0
+  PipeMoveSpeed: 15
   ScoreText: {fileID: 2034538956}
   GameOverScreen: {fileID: 497288856}
+  isGameOver: 0
+  originalPipeSpeed: 15
+  TargetPipeSpeed: 0
+  PipeSpeedMultiplier: 2.5
 --- !u!4 &1941584070
 Transform:
   m_ObjectHideFlags: 0
